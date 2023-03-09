@@ -1,0 +1,31 @@
+function setup() {
+  createCanvas(400, 400);
+  background("lightBlue");
+  stroke("Red");
+  strokeWeight(8);
+  //frameRate(1);
+}
+
+function draw() {
+  //Draw line given two points - single line comment
+  
+  /*
+    Multiline comment
+  */
+  stroke("Green");
+  noFill();
+  ellipse(100, 100, 150, 150);
+  stroke("Blue");
+  line(50, 50, 350, 350);
+  stroke("Red");
+  line(50, 80, 350, 380);
+  stroke("Black");
+  rect(100, 100, 150, 140);
+  
+  //control structures
+  stroke("White");
+  var x;
+  for (x = 30; x < 400; x = x + 30) {
+    point(x, x);
+  }
+}
